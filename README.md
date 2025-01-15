@@ -2,7 +2,7 @@
 Muhammad Zain Personal Chatbot version 1
 # Muhammad Zain AI Assistant Chatbot
 
-This repository contains a Streamlit-based chatbot designed to provide information about Muhammad Zain, his skills, and services related to Generative AI and Data Science.  The chatbot uses Google Gemini and leverages a pre-defined prompt to ensure accurate and relevant responses.
+This repository contains a Streamlit-based chatbot designed to provide information about **Muhammad Zain**, his skills, and services related to **Generative AI** and **Data Science**.  The chatbot uses Google Gemini and leverages a pre-defined prompt to ensure accurate and relevant responses.
 
 ## Features
 
