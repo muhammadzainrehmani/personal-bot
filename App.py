@@ -7,10 +7,6 @@ import google.generativeai as genai
 
 genai_api_key = st.secrets["genai_api_key"]
 
-# Add custom logos for the assistant and user
-user_logo = "qonkar-technologies-logo.svg"
-
-
 # Set streamlit page configuration
 st.set_page_config(page_title="Muhammad Zain ChatBot")
 st.title("Muhammad Zain AI Assistant")
