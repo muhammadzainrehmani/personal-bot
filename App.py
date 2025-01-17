@@ -146,7 +146,52 @@ if st.session_state.entered_prompt != "":
         # Append AI response to generated responses
         st.session_state.generated.append(output)
 
+with st.sidebar:  # Or st.expander("About"):
+    st.header("About This Chatbot")
+    st.write("This AI Assistant is designed to provide information about **Muhammad Zain** and his services related to **Generative AI** and **Data Science.**  It's powered by Google Gemini and maintained on GitHub.")
+    st.markdown("""
+    <div style="text-align: left;">
+            <!-- GitHub -->
+            <a href="https://github.com/muhammadzainrehmani/personal-bot" target="_blank" style="text-decoration: none; margin: 10px;">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub"/> View on GitHub
+            </a>
+    </div>
+    """, unsafe_allow_html=True)
 
+    st.title("Follow Me on Social Media")
+
+    # Social media links with icons
+    st.markdown("""
+    <div style="text-align: left;">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/muhammad-zain-rehmani" target="_blank" style="text-decoration: none; margin: 10px;">
+            <img src="https://img.icons8.com/ios-filled/30/0077b5/linkedin.png" alt="LinkedIn"/> LinkedIn
+        </a>
+        <br>
+        <!-- Personal Website -->
+        <a href="https://muhammadzainrehmani.tiiny.site/" target="_blank" style="text-decoration: none; margin: 10px;">
+            <img src="https://img.icons8.com/ios-filled/30/4CAF50/domain.png" alt="Website"/> Website
+        </a>
+        <br>
+        <!-- Twitter -->
+        <a href="https://twitter.com/m_zain_rehmani" target="_blank" style="text-decoration: none; margin: 10px;">
+            <img src="https://img.icons8.com/ios-filled/30/1DA1F2/twitter.png" alt="Twitter"/> Twitter
+        </a>
+        <br>
+        <!-- Instagram -->
+        <a href="https://instagram.com/muhammad_zain_rehmani" target="_blank" style="text-decoration: none; margin: 10px;">
+            <img src="https://img.icons8.com/ios-filled/30/833AB4/instagram-new.png" alt="Instagram"/> Instagram
+        </a>
+        <br>
+        <!-- Facebook -->
+        <a href="https://facebook.com/muhammadzainrehmaniofficial" target="_blank" style="text-decoration: none; margin: 10px;">
+            <img src="https://img.icons8.com/ios-filled/30/4267B2/facebook-new.png" alt="Facebook"/> Facebook
+        </a>
+    </div>
+    """, unsafe_allow_html=True)
+
+
+    
 # Display the chat history
 if st.session_state['generated']:
     for i in range(len(st.session_state['generated'])-1, -1, -1):
